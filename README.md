@@ -2,7 +2,7 @@
 
 Official code for the BMRS benchmark paper.
 
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.12%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/iitpvisionlab/BMRS/blob/main/LICENSE)
 [![Paper](https://img.shields.io/badge/paper-preprints.org-orange)](https://www.preprints.org/manuscript/202606.1484)
 [![Dataset](https://img.shields.io/badge/dataset-Hugging%20Face-yellow)](https://huggingface.co/datasets/nikos74/BMRS)
@@ -140,9 +140,12 @@ Coming soon...
 
 ## Troubleshooting
 
-- Make sure your dataset path points to a valid dataset folder.
-- Для каждой стратегии правильное количество промптов
-- Бенчмарк вызывается с правильной функцией однокартиночных или мультикартиночных
+- Make sure your dataset path in config points to a valid dataset folder.
+
+- Make sure each strategy is given the correct number of prompts.
+
+- Make sure the benchmark is called with the correct single-image or multi-image function.
+
 - If a problem is skipped, check the dataset folder structure and your strategy logic.
 
 ## Citation
