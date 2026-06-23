@@ -1,5 +1,5 @@
 {
-    "dataset": "../tasks/",
+    "dataset": "tasks/",
     "model": "model name to save results, does not affect anything else",
     "strategies": [
         {
@@ -12,14 +12,6 @@
             "strategy": "direct",
             "prompts": [
                 "one more prompt for direct strategy can be tested"
-            ]
-        },
-        {
-            "strategy": "contrastive-iterative",
-            "prompts": [
-                "prompt for first pair to compare",
-                "prompt for iterative concept refinement",
-                "prompt for final concept refinement"
             ]
         },
         {
@@ -43,6 +35,29 @@
             "prompts": [
                 "prompt for single pair comparison",
                 "prompt for final concept generation place for per-pair comparison {}"
+            ]
+        },
+        {
+            "strategy": "contrastive-direct-multiimage",
+            "prompts": [
+                "prompt for single pair comparison",
+                "prompt for final concept generation place for per-pair comparison {}"
+            ]
+        },
+        {
+            "strategy": "contrastive-iterative",
+            "prompts": [
+                "prompt for first pair to compare",
+                "prompt for iterative concept refinement",
+                "prompt for final concept refinement"
+            ]
+        },
+        {
+            "strategy": "contrastive-iterative-multiimage",
+            "prompts": [
+                "prompt for first pair to compare",
+                "prompt for iterative concept refinement",
+                "prompt for final concept refinement"
             ]
         }
     ]

@@ -25,9 +25,13 @@ from pathlib import Path
 from typing import List, Dict, Optional, Iterable, Union
 from typeguard import check_type, TypeCheckError
 
-from results import BenchmarkResult, StrategyResult
-from config import BenchmarkConfig, StrategySetup
-from strategies import StrategyName, STRATEGIES, singleimage_to_multiimage
+from bmrs.answers_collection.results import BenchmarkResult, StrategyResult
+from bmrs.answers_collection.config import BenchmarkConfig, StrategySetup
+from bmrs.answers_collection.strategies import (
+    StrategyName,
+    STRATEGIES,
+    singleimage_to_multiimage,
+)
 
 
 class BMRS:
@@ -110,10 +114,12 @@ class BMRS:
                     f"Strategy `{strategy}` is not compatible with a single-image model; "
                     "use a single-image compatible strategy or a multi-image model."
                 )
-            
+
         multi_ask_model = singleimage_to_multiimage(ask_model)
 
-        return self.run_multiimage(multi_ask_model, reload_context, strategies, checkpoint_dir)
+        return self.run_multiimage(
+            multi_ask_model, reload_context, strategies, checkpoint_dir
+        )
 
     def run_multiimage(
         self,

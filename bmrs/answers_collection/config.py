@@ -12,6 +12,8 @@ from pathlib import Path
 from typing import List, Dict, Any
 from typeguard import check_type, TypeCheckError
 
+from bmrs.answers_collection.strategies import StrategyName, PROMPTS_PER_STRATEGY
+
 
 class ConfigError(ValueError):
     """
@@ -25,9 +27,6 @@ class ConfigError(ValueError):
     """
 
     pass
-
-
-from strategies import StrategyName, PROMPTS_PER_STRATEGY
 
 
 @dataclass

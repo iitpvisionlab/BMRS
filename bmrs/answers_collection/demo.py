@@ -1,8 +1,9 @@
 from typing import List
 from pathlib import Path
 
-from benchmark import BenchmarkConfig, BenchmarkResult, BMRS
-from strategies import StrategyName
+from bmrs.answers_collection.benchmark import BenchmarkConfig, BenchmarkResult, BMRS
+from bmrs.answers_collection.strategies import StrategyName
+from bmrs.definitions import CONFIG_DIR, RESULTS_DIR
 
 
 def ask_model(prompt: str, image: Path):
@@ -21,7 +22,7 @@ def reload_model():
 
 if __name__ == "__main__":
     # inference model
-    config_path = "../prompts/sample_config.json"
+    config_path = CONFIG_DIR / "sample_config.json"
 
     config = BenchmarkConfig.load(config_path)
     benchmark = BMRS(config)
@@ -30,7 +31,7 @@ if __name__ == "__main__":
     results = benchmark.run(
         ask_model,
         reload_model,
-        checkpoint_dir="bench_checkpoints",
+        checkpoint_dir=RESULTS_DIR / "checkpoints",
         strategies=[
             StrategyName.CONTRASTIVE_ITERATIVE,
             StrategyName.CONTRASTIVE_DIRECT,

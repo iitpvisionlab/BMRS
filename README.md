@@ -1,18 +1,14 @@
 # BMRS: Bongard-Maximov problems for Remote Sensing.
 
-Official code for the BMRS benchmark paper.
-
 [![Python](https://img.shields.io/badge/python-3.12%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/iitpvisionlab/BMRS/blob/main/LICENSE)
 [![Paper](https://img.shields.io/badge/paper-preprints.org-orange)](https://www.preprints.org/manuscript/202606.1484)
 [![Dataset](https://img.shields.io/badge/dataset-Hugging%20Face-yellow)](https://huggingface.co/datasets/nikos74/BMRS)
 
-This code helps you run the benchmark on our dataset and evaluate answers across different models and strategies. It supports both single-image and multi-image model input.
+Official code for the BMRS benchmark paper.
 
 ## Table of contents
 
-- [Overview](#overview)
-- [Paper and dataset](#paper-and-dataset)
 - [Installation](#installation)
 - [Benchmark structure](#benchmark-structure)
 - [Generating answers](#generating-answers)
@@ -23,21 +19,6 @@ This code helps you run the benchmark on our dataset and evaluate answers across
 - [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
 - [License](#license)
-
-## Overview
-
-BMRS is designed to make benchmark experiments easy to configure, run, and reproduce. You define the dataset and strategies in a config file, provide a model function, and run the benchmark.
-
-The benchmark loads each problem folder from the dataset, runs the selected strategy, and stores one answer per problem. If a problem cannot be processed, it is added to the skipped list instead of stopping the whole run.
-
-## Paper and dataset
-
-This repository is the **official code** for the BMRS benchmark paper.
-
-- **Paper:** [Preprints.org](https://www.preprints.org/manuscript/202606.1484)
-- **Dataset:** [Hugging Face](https://huggingface.co/datasets/nikos74/BMRS)
-
-If you use this code or dataset in your work, please cite the paper.
 
 ## Installation
 
@@ -53,23 +34,35 @@ The benchmark has two stages: generating model answers and evaluating those answ
 
 ## Generating answers
 
-An example run is shown in `bmrs/answers_collection/demo.py`. To use BMRS, you need to build a benchmark config and provide two functions:
+An example run is shown in `bmrs/answers_collection/demo.py`. You can run demo using:
+```bash
+python3 -m bmrs.answers_collection.demo
+```
+
+
+To use BMRS with you model, you need to build a benchmark config and provide two functions:
 
 - `ask_model`: sends one prompt and one or more images to the model and returns the answer.
 
 - `reload_context`: resets the model context between different problem classes so that each class is processed independently.
 
-Communication with model and benchmark config are explained below. After you've defined them you can run inference on dataset:
+Communication with model and benchmark config are explained below. 
+After you've defined them you can run inference on dataset and save results:
 
 ```python
-config = BenchmarkConfig.load("../prompts/sample_config.json")
+from bmrs.answers_collection.benchmark import BenchmarkConfig, BenchmarkResult, BMRS
+from bmrs.answers_collection.strategies import StrategyName
+from bmrs.definitions import CONFIG_DIR, RESULTS_DIR
+
+config = BenchmarkConfig.load(CONFIG_DIR / "your_config.json")
 benchmark = BMRS(config)
 
 results = benchmark.run(
     ask_model=ask_model,
     reload_context=reload_model,
-    checkpoint_dir="bench_checkpoints",
+    checkpoint_dir=RESULTS_DIR / "checkpoints",
 )
+results.save_as_json(RESULTS_DIR / "results.json")
 ```
 
 The benchmark will:
@@ -77,7 +70,8 @@ The benchmark will:
 - iterate over each problem folder,
 - run the selected strategy for each problem,
 - collect answers and skipped items,
-- return a `BenchmarkResult`.
+- return a `BenchmarkResult`,
+- save answers.
 
 ### Asking model
 
