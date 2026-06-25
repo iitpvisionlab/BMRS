@@ -51,7 +51,6 @@ After you've defined them you can run inference on dataset and save results:
 
 ```python
 from bmrs.answers_collection.benchmark import BenchmarkConfig, BenchmarkResult, BMRS
-from bmrs.answers_collection.strategies import StrategyName
 from bmrs.definitions import CONFIG_DIR, RESULTS_DIR
 
 config = BenchmarkConfig.load(CONFIG_DIR / "your_config.json")
@@ -107,9 +106,67 @@ The config defines:
 - where dataset is stored,
 - how to name your model in results files.
 
-At runtime, the benchmark reads the config, loads the dataset, and runs each selected strategy on each problem folder.
-
 To reproduce our results or to compare your model your model with others you can use our config at `configs/bmrs_config.json`.
+
+Also you can create your own config. The expected structure is:
+```json
+{
+    "dataset": "path to your dataset",
+    "model": "model name to save results, does not affect anything else",
+    "strategies": [
+        {
+            "strategy": "strategy name",
+            "prompts": [
+                "prompt for the model"
+            ]
+        }, 
+        {
+            "strategy": "one more strategy",
+            "prompts": [
+                "prompt for the model"
+            ]
+        }
+    ]
+}
+```
+
+Some ot the strategies can be used both for single-image and multi-image modes. For contrastive strategies there are also available multi-image versions, which send to the model two separate images instead of collage. For the compatibility with different modes check `Mode` column in the table below.
+
+Each strategy require specific number of prompts. You can check this number using `PROMPTS_PER_STRATEGY` dictionary and `StrategyName` class:
+```python
+from bmrs.answers_collection.startegies import PROMPTS_PER_STRATEGY, StrategyName
+
+PROMPTS_PER_STRATEGY[StrategyName.DIRECT]
+```
+For strategies explanation see section 3.3 of the original paper. For prompts explanation see `sample_config.json`.
+
+You can use a subset of strategies listed in a config for benchmark run. In this case, specify them in `benchmark.run` or `benchmark.run_multiimage` using `StrategyName` class:
+```python
+from bmrs.answers_collection.strategies import StrategyName
+
+results = benchmark.run(
+    ask_model,
+    reload_model,
+    checkpoint_dir=RESULTS_DIR / "checkpoints",
+    strategies=[
+        StrategyName.CONTRASTIVE_ITERATIVE,
+        StrategyName.CONTRASTIVE_DIRECT,
+        ...
+    ],
+) 
+```
+
+List of available strategies:
+| Strategy | Name in config | Usage in the code | Required number of prompts | Mode |
+|---|---|---|---:|---|
+| Direct | `direct` | `StrategyName.DIRECT` | 1 | both |
+| Descriptive direct | `descriptive-direct` | `StrategyName.DESCRIPTIVE_DIRECT` | 2 | both |
+| Descriptive iterative | `descriptive-iterative` | `StrategyName.DESCRIPTIVE_ITERATIVE` | 4 | both |
+| Contrastive direct | `contrastive-direct` | `StrategyName.CONTRASTIVE_DIRECT` | 2 | both |
+| Contrastive direct multiimage | `contrastive-direct-multiimage` | `StrategyName.CONTRASTIVE_DIRECT_MULTIIMAGE` | 2 | multi image |
+| Contrastive iterative | `contrastive-iterative` | `StrategyName.CONTRASTIVE_ITERATIVE` | 3 | both |
+| Contrastive iterative multiimage | `contrastive-iterative-multiimage` | `StrategyName.CONTRASTIVE_ITERATIVE_MULTIIMAGE` | 3 | multi image |
+
 
 ### Saving the results
 
