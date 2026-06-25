@@ -202,7 +202,9 @@ class BenchmarkResult:
         json_string = self.to_json(indent)
 
         if not file_path:
-            file_path = "results" / "answers_" + self.model + "_" + self.end_time + ".json"
+            file_path = (
+                "results" / "answers_" + self.model + "_" + self.end_time + ".json"
+            )
 
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(json_string)

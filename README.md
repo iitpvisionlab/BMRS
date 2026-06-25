@@ -1,18 +1,14 @@
 # BMRS: Bongard-Maximov problems for Remote Sensing.
 
-Official code for the BMRS benchmark paper.
-
 [![Python](https://img.shields.io/badge/python-3.12%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/iitpvisionlab/BMRS/blob/main/LICENSE)
 [![Paper](https://img.shields.io/badge/paper-preprints.org-orange)](https://www.preprints.org/manuscript/202606.1484)
 [![Dataset](https://img.shields.io/badge/dataset-Hugging%20Face-yellow)](https://huggingface.co/datasets/nikos74/BMRS)
 
-This code helps you run the benchmark on our dataset and evaluate answers across different models and strategies. It supports both single-image and multi-image model input.
+Official code for the BMRS benchmark paper.
 
 ## Table of contents
 
-- [Overview](#overview)
-- [Paper and dataset](#paper-and-dataset)
 - [Installation](#installation)
 - [Benchmark structure](#benchmark-structure)
 - [Generating answers](#generating-answers)
@@ -23,21 +19,6 @@ This code helps you run the benchmark on our dataset and evaluate answers across
 - [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
 - [License](#license)
-
-## Overview
-
-BMRS is designed to make benchmark experiments easy to configure, run, and reproduce. You define the dataset and strategies in a config file, provide a model function, and run the benchmark.
-
-The benchmark loads each problem folder from the dataset, runs the selected strategy, and stores one answer per problem. If a problem cannot be processed, it is added to the skipped list instead of stopping the whole run.
-
-## Paper and dataset
-
-This repository is the **official code** for the BMRS benchmark paper.
-
-- **Paper:** [Preprints.org](https://www.preprints.org/manuscript/202606.1484)
-- **Dataset:** [Hugging Face](https://huggingface.co/datasets/nikos74/BMRS)
-
-If you use this code or dataset in your work, please cite the paper.
 
 ## Installation
 
@@ -53,23 +34,34 @@ The benchmark has two stages: generating model answers and evaluating those answ
 
 ## Generating answers
 
-An example run is shown in `bmrs/answers_collection/demo.py`. To use BMRS, you need to build a benchmark config and provide two functions:
+An example run is shown in `bmrs/answers_collection/demo.py`. You can run demo using:
+```bash
+python3 -m bmrs.answers_collection.demo
+```
+
+
+To use BMRS with you model, you need to build a benchmark config and provide two functions:
 
 - `ask_model`: sends one prompt and one or more images to the model and returns the answer.
 
 - `reload_context`: resets the model context between different problem classes so that each class is processed independently.
 
-Communication with model and benchmark config are explained below. After you've defined them you can run inference on dataset:
+Communication with model and benchmark config are explained below. 
+After you've defined them you can run inference on dataset and save results:
 
 ```python
-config = BenchmarkConfig.load("../prompts/sample_config.json")
+from bmrs.answers_collection.benchmark import BenchmarkConfig, BenchmarkResult, BMRS
+from bmrs.definitions import CONFIG_DIR, RESULTS_DIR
+
+config = BenchmarkConfig.load(CONFIG_DIR / "your_config.json")
 benchmark = BMRS(config)
 
 results = benchmark.run(
     ask_model=ask_model,
     reload_context=reload_model,
-    checkpoint_dir="bench_checkpoints",
+    checkpoint_dir=RESULTS_DIR / "checkpoints",
 )
+results.save_as_json(RESULTS_DIR / "results.json")
 ```
 
 The benchmark will:
@@ -77,7 +69,8 @@ The benchmark will:
 - iterate over each problem folder,
 - run the selected strategy for each problem,
 - collect answers and skipped items,
-- return a `BenchmarkResult`.
+- return a `BenchmarkResult`,
+- save answers.
 
 ### Asking model
 
@@ -113,9 +106,67 @@ The config defines:
 - where dataset is stored,
 - how to name your model in results files.
 
-At runtime, the benchmark reads the config, loads the dataset, and runs each selected strategy on each problem folder.
-
 To reproduce our results or to compare your model your model with others you can use our config at `configs/bmrs_config.json`.
+
+Also you can create your own config. The expected structure is:
+```json
+{
+    "dataset": "path to your dataset",
+    "model": "model name to save results, does not affect anything else",
+    "strategies": [
+        {
+            "strategy": "strategy name",
+            "prompts": [
+                "prompt for the model"
+            ]
+        }, 
+        {
+            "strategy": "one more strategy",
+            "prompts": [
+                "prompt for the model"
+            ]
+        }
+    ]
+}
+```
+
+Some ot the strategies can be used both for single-image and multi-image modes. For contrastive strategies there are also available multi-image versions, which send to the model two separate images instead of collage. For the compatibility with different modes check `Mode` column in the table below.
+
+Each strategy require specific number of prompts. You can check this number using `PROMPTS_PER_STRATEGY` dictionary and `StrategyName` class:
+```python
+from bmrs.answers_collection.startegies import PROMPTS_PER_STRATEGY, StrategyName
+
+PROMPTS_PER_STRATEGY[StrategyName.DIRECT]
+```
+For strategies explanation see section 3.3 of the original paper. For prompts explanation see `sample_config.json`.
+
+You can use a subset of strategies listed in a config for benchmark run. In this case, specify them in `benchmark.run` or `benchmark.run_multiimage` using `StrategyName` class:
+```python
+from bmrs.answers_collection.strategies import StrategyName
+
+results = benchmark.run(
+    ask_model,
+    reload_model,
+    checkpoint_dir=RESULTS_DIR / "checkpoints",
+    strategies=[
+        StrategyName.CONTRASTIVE_ITERATIVE,
+        StrategyName.CONTRASTIVE_DIRECT,
+        ...
+    ],
+) 
+```
+
+List of available strategies:
+| Strategy | Name in config | Usage in the code | Required number of prompts | Mode |
+|---|---|---|---:|---|
+| Direct | `direct` | `StrategyName.DIRECT` | 1 | both |
+| Descriptive direct | `descriptive-direct` | `StrategyName.DESCRIPTIVE_DIRECT` | 2 | both |
+| Descriptive iterative | `descriptive-iterative` | `StrategyName.DESCRIPTIVE_ITERATIVE` | 4 | both |
+| Contrastive direct | `contrastive-direct` | `StrategyName.CONTRASTIVE_DIRECT` | 2 | both |
+| Contrastive direct multiimage | `contrastive-direct-multiimage` | `StrategyName.CONTRASTIVE_DIRECT_MULTIIMAGE` | 2 | multi image |
+| Contrastive iterative | `contrastive-iterative` | `StrategyName.CONTRASTIVE_ITERATIVE` | 3 | both |
+| Contrastive iterative multiimage | `contrastive-iterative-multiimage` | `StrategyName.CONTRASTIVE_ITERATIVE_MULTIIMAGE` | 3 | multi image |
+
 
 ### Saving the results
 

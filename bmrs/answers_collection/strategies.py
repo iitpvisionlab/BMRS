@@ -26,7 +26,7 @@ from pathlib import Path
 from tqdm import tqdm
 from typing import List, Dict
 
-from results import StrategyResult, AnswerItem
+from bmrs.answers_collection.results import StrategyResult, AnswerItem
 
 log = getLogger(__name__)
 
@@ -142,12 +142,14 @@ def get_iterative_concept[T: (Path, List[Path])](
 
 def singleimage_to_multiimage(func: AskModelSingle) -> AskModelMulti:
     """
-    Wrap a single-image model to fit the multiimage signature. 
+    Wrap a single-image model to fit the multiimage signature.
     Warning: this wouldn't add new functionality, just calls the model with prompt and a first image.
     """
+
     @wraps(func)
     def wrapper(prompt: str, images: List[Path]) -> str:
         return func(prompt, images[0])
+
     return wrapper
 
 
