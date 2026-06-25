@@ -1,9 +1,7 @@
 import json
-import sys
-from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Literal
-from reader import load_model_data
+from typing import Dict, List, Optional
+from bmrs.evaluation.results_reader import ResultsDataManager
 
 
 class ResultSet:
@@ -12,73 +10,59 @@ class ResultSet:
         results_path: Path,
         evaluation_path: Path = Path("evaluation.json"),
         tasks_to_remove: list[str] = [],
-        prompts_path: Path|None = None
+        prompts_path: Optional[Path] = None,
     ):
         """
-        Инициализация программы
-        Args:
-            json_path: путь к JSON файлу с результатами
-            images_folder: путь к папке с изображениями
-            evaluation_path: путь к файлу с отзывами
+        results_path: results input file (json)
+        evaluation_path: upcoming task evaluation output file path (json)
+        tasks_to_remove: optional list of tasks not to include
+        prompts_path: json file with VLM prompts list. Will be created if not exist (json)
         """
-        self.tasks_to_remove: list[str] = tasks_to_remove
+
+        if not prompts_path:
+            prompts_path = Path("data/prompts.json")
+        self.data = ResultsDataManager(
+            results_path, prompts_path
+        ).get_sorted_data()  # General data
+
         self.results_path = results_path
         self.evaluation_path = evaluation_path
-        self.data: dict[str, list[dict[str, str]]] = {}  # General data
+        self.tasks_to_remove: list[str] = tasks_to_remove
         self.users: Dict[str, Dict[str, str]] = {}  # Users info
-        self.prompts_path = prompts_path # json file with VLM prompts list. Will be created if not exist 
-        self.user_tasks: Dict[str, List[Dict[str, str | int]]] = ({})  # Tasks answers by users
+        self.prompts_path = prompts_path  # 
+        self.user_tasks: Dict[str, List[Dict[str, str | int]]] = (
+            {}
+        )  # Tasks answers by users
         self.evaluations: Dict[str, Dict[str, Dict[str, str | int]]] = {}
         # Tasks with evaluations by tasks (tasks[user ids[task responses + evaluation]])
-
         self.load_results()
         self.load_evaluation()
 
     def load_results(self):
         if not self.results_path.exists():
-            print(f"Ошибка: Файл {self.results_path} не найден!")
-            sys.exit(1)
-        
-        self.data = load_model_data(self.results_path, self.prompts_path)
-        self._exclude_tasks(self.tasks_to_remove)
+            raise FileNotFoundError(f"file {self.results_path} not found!")
 
+        self._exclude_tasks(self.tasks_to_remove)
         # data setup
         for user_id, records in self.data.items():
             self.user_tasks[user_id] = []
 
-            for i, record in enumerate(records):
-                if record.get("response_type") == "form":
-                    # Users info
-                    self.users[user_id] = {
-                        "username": record.get("username", user_id),
-                        "age": record.get("age", "N/A"),
-                        "sex": record.get("sex", "N/A"),
-                        "occupation": record.get("occupation", "N/A"),
-                        "start_timestamp": record.get("timestamp", "N/A"),
-                        "end_timestamp": records[-1].get("timestamp", "N/A"),
-                    }
-                elif record.get("response_type") == "task_answer":
-                    # Tasks answers by users
+            for _, record in enumerate(records):
+                if record.get("response_type") == "task_answer":
                     task_info = {
                         "test_image": record.get("test_image"),
                         "left_answer": record.get("left_answer"),
-                        "time": timestamp_difference(
-                            records[i - 1].get("timestamp", "N/A"),
-                            record.get("timestamp", "N/A"), True), 
-                            
                     }
                     self.user_tasks[user_id].append(task_info)
-                elif record.get("response_type") == "email_submission":
-                    self.users[user_id]["email"] = record["email"]
 
     def load_evaluation(self):
-        
+
         if self.evaluation_path.exists():
             with open(self.evaluation_path, "r", encoding="utf-8") as f:
                 self.evaluations = json.load(f)
         evaluations = self.evaluations
         for user_id, records in self.data.items():
-            for i, record in enumerate(records):
+            for _, record in enumerate(records):
                 if record["response_type"] == "task_answer":
                     img_name = record["test_image"]
                     if img_name not in evaluations:
@@ -90,10 +74,6 @@ class ResultSet:
                             "modelname": record["modelname"],
                             "strategy": record["strategy"],
                             "left_answer": record["left_answer"],
-                            "right_answer": record["right_answer"],
-                            "time": timestamp_difference(
-                                records[i - 1]["timestamp"],
-                                record.get("timestamp", "N/A"), True),
                             "prompt_id": record.get("prompt_id", "N/A"),
                             "evaluation": "",
                         }
@@ -117,13 +97,3 @@ class ResultSet:
     def save_evaluation(self):
         with open(self.evaluation_path, "w", encoding="utf-8") as f:
             json.dump(self.evaluations, f, ensure_ascii=False, indent=2)
-
-def timestamp_difference(from_timestamp: str, to_timestamp: str, skip: bool = False) -> int:
-    """Difference in seconds for to timestamps"""
-    if skip:
-        return 0
-    else:
-        time_from = datetime.strptime(from_timestamp, "%Y%m%dT%H%M%S")
-        time_to = datetime.strptime(to_timestamp, "%Y%m%dT%H%M%S")
-        seconds_difference = int((time_to - time_from).total_seconds())
-        return seconds_difference
