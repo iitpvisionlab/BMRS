@@ -1,15 +1,16 @@
+import argparse
 from pathlib import Path
 
-from src.data_utils import load_json, save_json, load_text, make_run_dir
-from src.prompt_builder import build_user_prompt
+from bmrs.llm_judge.src.data_utils import load_json, save_json, load_text, make_run_dir
+from bmrs.llm_judge.src.prompt_builder import build_user_prompt
 
-# from src.llm_utils import load_llm, ask_llm
+from bmrs.llm_judge.src.llm_utils import load_llm, ask_llm
+
 
 # from src.qwen_utils import load_llm, ask_llm
 
-from src.deepseek_utils import load_llm, ask_llm
+# from src.deepseek_utils import load_llm, ask_llm
 
-import argparse
 
 
 def convert_human_unclear_to_users_format(human_data: dict):
