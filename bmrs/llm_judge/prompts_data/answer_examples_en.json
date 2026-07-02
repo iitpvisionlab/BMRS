@@ -1,0 +1,1786 @@
+{
+  "bb_m_01.png": {
+    "correct_examples": [
+      {
+        "left_answer": "smooth coastline",
+        "right_answer": "ribbed coastline"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "\"regular\" shapes",
+        "right_answer": "irregular shapes"
+      }
+    ]
+  },
+  "bb_m_02.png": {
+    "correct_examples": [
+      {
+        "left_answer": "elongated objects",
+        "right_answer": "non elongated objects"
+      },
+      {
+        "left_answer": "longer",
+        "right_answer": "shorter"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Rectangular objects",
+        "right_answer": "Round objects"
+      }
+    ]
+  },
+  "bb_m_03.png": {
+    "correct_examples": [
+      {
+        "left_answer": "object (island or lake) fits into the frame fully",
+        "right_answer": "no islands or lakes present fully in the image"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "there is a small island in each picture",
+        "right_answer": "most of the pictures are occupied by greenery"
+      }
+    ]
+  },
+  "bb_m_04.png": {
+    "correct_examples": [
+      {
+        "left_answer": "cars present",
+        "right_answer": "immovable objects"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "parking lots",
+        "right_answer": "land plot"
+      }
+    ]
+  },
+  "bb_m_08.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Orientation of cars along one straight line",
+        "right_answer": "Cars are not directed along one straight line"
+      },
+      {
+        "left_answer": "cars parallel",
+        "right_answer": "cars not parallel"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "enlarged photograph, car parking, vehicles",
+        "right_answer": "reduced photograph, car parking, vehicles"
+      },
+      {
+        "left_answer": "car parking",
+        "right_answer": "road"
+      }
+    ]
+  },
+  "bb_m_09.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Solid curved lines ",
+        "right_answer": "Branched lines"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Solid curved lines ",
+        "right_answer": "Branched lines"
+      }
+    ]
+  },
+  "bb_m_10.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Artificially marked land plots",
+        "right_answer": "Natural irregularly shaped landscapes"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "field",
+        "right_answer": "forest"
+      }
+    ]
+  },
+  "bb_m_100.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Line",
+        "right_answer": "Cross"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "top-down view",
+        "right_answer": "angled view"
+      }
+    ]
+  },
+  "bb_m_101.png": {
+    "correct_examples": [
+      {
+        "left_answer": "texture stripes are located approximately vertically",
+        "right_answer": "texture stripes are located at different angles"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Solid rock",
+        "right_answer": "Sand"
+      }
+    ]
+  },
+  "bb_m_102.png": {
+    "correct_examples": [
+      {
+        "left_answer": "scene objects form vertical lines",
+        "right_answer": "scene objects form horizontal lines"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": " Field",
+        "right_answer": "Forested area"
+      }
+    ]
+  },
+  "bb_m_103.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Orientation diagonally upward to the right",
+        "right_answer": "Orientation diagonally downward to the left"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "arbitrary baseball field",
+        "right_answer": "even baseball field"
+      }
+    ]
+  },
+  "bb_m_104.png": {
+    "correct_examples": [
+      {
+        "left_answer": "There is an elongated curve",
+        "right_answer": "There is an elongated straight line"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Houses predominately",
+        "right_answer": "Nature"
+      }
+    ]
+  },
+  "bb_m_105.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Pieces of forest among open spaces",
+        "right_answer": "Open spaces among forest"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "more natural colors",
+        "right_answer": "less natural colors"
+      }
+    ]
+  },
+  "bb_m_106.png": {
+    "correct_examples": [
+      {
+        "left_answer": "land is surrounded by water",
+        "right_answer": "water is surrounded by land"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "wild beach",
+        "right_answer": "not wild beach"
+      }
+    ]
+  },
+  "bb_m_107.png": {
+    "correct_examples": [
+      {
+        "left_answer": "more even shore",
+        "right_answer": "uneven shore"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Even coastlines, the overall shade of the photographs is green",
+        "right_answer": "Curved/winding coastlines, the overall shade of the photographs is blue"
+      }
+    ]
+  },
+  "bb_m_108.png": {
+    "correct_examples": [
+      {
+        "left_answer": "complex coastline",
+        "right_answer": "even coastline"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "smooth separation boundaries",
+        "right_answer": "Straight separation boundaries"
+      }
+    ]
+  },
+  "bb_m_109.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Coast of an urbanized agglomeration",
+        "right_answer": "Coast of a suburb or uninhabited territories"
+      },
+      {
+        "left_answer": "bridges",
+        "right_answer": "no bridges"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "river",
+        "right_answer": "lake"
+      }
+    ]
+  },
+  "bb_m_11.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Buildings",
+        "right_answer": "Wild area"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "No trees",
+        "right_answer": "Trees"
+      }
+    ]
+  },
+  "bb_m_110.png": {
+    "correct_examples": [
+      {
+        "left_answer": "city",
+        "right_answer": "steppe"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Circular square ",
+        "right_answer": "Ring road"
+      }
+    ]
+  },
+  "bb_m_111.png": {
+    "correct_examples": [
+      {
+        "left_answer": "special tracks",
+        "right_answer": "real road interchanges"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Country highway",
+        "right_answer": "City highway"
+      }
+    ]
+  },
+  "bb_m_112.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Pools are located on the northern side",
+        "right_answer": "Pools are located on the southern side"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "green is represented in a narrow dynamic color range",
+        "right_answer": "green is represented in a wide dynamic color range"
+      }
+    ]
+  },
+  "bb_m_113.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Object with a quadrilateral in the center",
+        "right_answer": "Object with a circle in the center"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Pronounced inner cutout in the roofs of the central buildings",
+        "right_answer": "Solid roofs on the central buildings"
+      }
+    ]
+  },
+  "bb_m_114.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Naturally created road",
+        "right_answer": "Road artificially created by humans"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Natural landscapes",
+        "right_answer": "Artificial landscapes"
+      }
+    ]
+  },
+  "bb_m_115.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Power transmission towers",
+        "right_answer": "Wind power plants"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "no shadows",
+        "right_answer": "shadows present"
+      }
+    ]
+  },
+  "bb_m_116.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Animals in the distance",
+        "right_answer": "Animals nearby"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Tree shadows are cast onto the pasture, sheep shadows are not distinguishable",
+        "right_answer": "Sheep shadows are distinguishable and clearly visible"
+      }
+    ]
+  },
+  "bb_m_117.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Buildings",
+        "right_answer": "Nature"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "pond",
+        "right_answer": "ground"
+      }
+    ]
+  },
+  "bb_m_118.png": {
+    "correct_examples": [
+      {
+        "left_answer": "grouped in one place ",
+        "right_answer": "not grouped in one place "
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "sheep",
+        "right_answer": "goats"
+      }
+    ]
+  },
+  "bb_m_12.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Water",
+        "right_answer": "Forests"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Nature",
+        "right_answer": "fields"
+      }
+    ]
+  },
+  "bb_m_120.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Same-type vehicles",
+        "right_answer": "Vehicles of different types"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "several cars",
+        "right_answer": "trucks"
+      }
+    ]
+  },
+  "bb_m_121.png": {
+    "correct_examples": [
+      {
+        "left_answer": "presence of clouds",
+        "right_answer": "absence of clouds"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Urbanised area, lots of clouds",
+        "right_answer": "Rural area, few clouds"
+      }
+    ]
+  },
+  "bb_m_122.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Camels",
+        "right_answer": "Non-camels"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "desert",
+        "right_answer": "savanna"
+      }
+    ]
+  },
+  "bb_m_124.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Transport",
+        "right_answer": "Nature"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Planes",
+        "right_answer": "a sheep"
+      }
+    ]
+  },
+  "bb_m_125.png": {
+    "correct_examples": [
+      {
+        "left_answer": "all individuals are identical",
+        "right_answer": "there are distinct individuals"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "animals together",
+        "right_answer": "animals running apart"
+      }
+    ]
+  },
+  "bb_m_13.png": {
+    "correct_examples": [
+      {
+        "left_answer": "areas without objects",
+        "right_answer": "areas with objects"
+      },
+      {
+        "left_answer": "empty",
+        "right_answer": "objects present"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "No transport",
+        "right_answer": "There is transport"
+      }
+    ]
+  },
+  "bb_m_14.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Quadrilaterals",
+        "right_answer": "Circles"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "quadrilaterals",
+        "right_answer": "triangles"
+      }
+    ]
+  },
+  "bb_m_15.png": {
+    "correct_examples": [
+      {
+        "left_answer": "there are line segments",
+        "right_answer": "there are no line segments"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "more water",
+        "right_answer": "less water"
+      }
+    ]
+  },
+  "bb_m_18.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Manmade",
+        "right_answer": "Nature"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "regular shapes",
+        "right_answer": "irregular shapes"
+      }
+    ]
+  },
+  "bb_m_19.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Cloudy",
+        "right_answer": "Clear"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Big city, more clouds",
+        "right_answer": "Suburb, less clouds"
+      }
+    ]
+  },
+  "bb_m_20.png": {
+    "correct_examples": [
+      {
+        "left_answer": "there are trees",
+        "right_answer": "there are no trees"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "horizontal lines",
+        "right_answer": "vertical lines"
+      }
+    ]
+  },
+  "bb_m_22.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Vertical straight lines",
+        "right_answer": "Horizontal straight lines"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Highway",
+        "right_answer": "main road"
+      }
+    ]
+  },
+  "bb_m_23.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Non-white objects",
+        "right_answer": "White images"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "fewer lines",
+        "right_answer": "more lines"
+      }
+    ]
+  },
+  "bb_m_24.png": {
+    "correct_examples": [
+      {
+        "left_answer": "vortex twisting to the right",
+        "right_answer": "vortex twisting to the left"
+      },
+      {
+        "left_answer": "Northern Hemisphere",
+        "right_answer": "Southern Hemisphere"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "vortex",
+        "right_answer": "spiral"
+      }
+    ]
+  },
+  "bb_m_27.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Cold region",
+        "right_answer": "warm region"
+      },
+      {
+        "left_answer": "winter",
+        "right_answer": "summer"
+      },
+      {
+        "left_answer": "snow present",
+        "right_answer": "snow absent"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Mountain landscape",
+        "right_answer": "Plain landscape"
+      }
+    ]
+  },
+  "bb_m_28.png": {
+    "correct_examples": [
+      {
+        "left_answer": "there are leaves",
+        "right_answer": "there are no leaves"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Summer",
+        "right_answer": "winter"
+      }
+    ]
+  },
+  "bb_m_29.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Interchange for four roads",
+        "right_answer": "Interchange for three roads"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "intechange",
+        "right_answer": "road crossing"
+      }
+    ]
+  },
+  "bb_m_126.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Images from videogames",
+        "right_answer": "Real images"
+      },
+      {
+        "left_answer": "3d graphics",
+        "right_answer": "remote sensing imagery"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "One \"type\" of surface touches the border of the image (whether water or land)",
+        "right_answer": "Two \"types\" of surface touch the border of the image (land and forest, water and land)"
+      }
+    ]
+  },
+  "bb_m_30.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Circles",
+        "right_answer": "Squares"
+      },
+      {
+        "left_answer": "circular objects",
+        "right_answer": "Rectangular objects"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Solid curved lines ",
+        "right_answer": "Branched lines"
+      }
+    ]
+  },
+  "bb_m_32.png": {
+    "correct_examples": [
+      {
+        "left_answer": "left-hand traffic",
+        "right_answer": "right-hand traffic"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "agricultural fields",
+        "right_answer": "natural objects"
+      }
+    ]
+  },
+  "bb_m_33.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Baseball field",
+        "right_answer": "Tennis court"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Road without turns",
+        "right_answer": "Intersection"
+      }
+    ]
+  },
+  "bb_m_36.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Freshly plowed land, little vegetation",
+        "right_answer": "Field has sprouted, lots of vegetation"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "chaos",
+        "right_answer": "orderliness"
+      }
+    ]
+  },
+  "bb_m_37.png": {
+    "correct_examples": [
+      {
+        "left_answer": "no snow",
+        "right_answer": "there is snow"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "airplanes",
+        "right_answer": "private houses"
+      }
+    ]
+  },
+  "bb_m_38.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Waves",
+        "right_answer": "Calm"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "yellow markings",
+        "right_answer": "white markings"
+      }
+    ]
+  },
+  "bb_m_41.png": {
+    "correct_examples": [
+      {
+        "left_answer": "pool surrounded by buildings on all sides",
+        "right_answer": "pool not surrounded by buildings on all sides"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "More than 1 boat",
+        "right_answer": "1 boat"
+      }
+    ]
+  },
+  "bb_m_45.png": {
+    "correct_examples": [
+      {
+        "left_answer": "sports fields",
+        "right_answer": "fields"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Most likely large scale",
+        "right_answer": "Most likely small scale"
+      }
+    ]
+  },
+  "bb_m_46.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Top view shot",
+        "right_answer": "Angled shot"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Low-rise houses",
+        "right_answer": "High-rise buildings"
+      }
+    ]
+  },
+  "bb_m_49.png": {
+    "correct_examples": [
+      {
+        "left_answer": "bridge",
+        "right_answer": "not a bridge"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "2 standout objects",
+        "right_answer": "3 contrastively standout objects"
+      }
+    ]
+  },
+  "bb_m_51.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Moving vessels ",
+        "right_answer": "Vessels at parking"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Interchange with circles",
+        "right_answer": "Interchange without circles"
+      }
+    ]
+  },
+  "bb_m_53.png": {
+    "correct_examples": [
+      {
+        "left_answer": "central road markings are yellow",
+        "right_answer": "central road markings are white"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Cars are located parallel to each other",
+        "right_answer": "Cars are located diagonally (perpendicularly)"
+      }
+    ]
+  },
+  "bb_m_54.png": {
+    "correct_examples": [
+      {
+        "left_answer": "\"zebra\" crossings are even rectangles",
+        "right_answer": "zebra crossings\" are represented as beveled (not at 90 degrees)"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Pedestrian crossings",
+        "right_answer": "Pedestrian crossings"
+      }
+    ]
+  },
+  "bb_m_56.png": {
+    "correct_examples": [
+      {
+        "left_answer": "roadside is marked with a \"dashed\" line",
+        "right_answer": "roadside is marked with a solid line (or not marked)"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "single-lane traffic",
+        "right_answer": "two-lane traffic"
+      }
+    ]
+  },
+  "bb_m_57.png": {
+    "correct_examples": [
+      {
+        "left_answer": "dashed",
+        "right_answer": "solid"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Single line without branches",
+        "right_answer": "All lines have branches"
+      }
+    ]
+  },
+  "bb_m_58.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Incomplete figures",
+        "right_answer": "Complete figures"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "I don't know",
+        "right_answer": "I don't know"
+      }
+    ]
+  },
+  "bb_m_59.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Wild forest",
+        "right_answer": "Forest in the city"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Larger scale. Fewer buildings.",
+        "right_answer": "Smaller scale. More buildings."
+      }
+    ]
+  },
+  "bb_m_60.png": {
+    "correct_examples": [
+      {
+        "left_answer": "pool",
+        "right_answer": "lake, closed reservoir"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "boundaries of water bodies have predominantly angular contours",
+        "right_answer": "boundaries of water bodies have predominantly rounded contours"
+      }
+    ]
+  },
+  "bb_m_61.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Straight road",
+        "right_answer": "Circular road"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Roads are visible in detail",
+        "right_answer": "Roads are visible small"
+      }
+    ]
+  },
+  "bb_m_62.png": {
+    "correct_examples": [
+      {
+        "left_answer": "road",
+        "right_answer": "rails"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Several boats",
+        "right_answer": "One boat"
+      }
+    ]
+  },
+  "bb_m_63.png": {
+    "correct_examples": [
+      {
+        "left_answer": "vertical airplane shots",
+        "right_answer": "horizontal airplane shots"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "looks like computer graphics",
+        "right_answer": "looks like real photographs"
+      }
+    ]
+  },
+  "bb_m_65.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Roofs of houses of the same color",
+        "right_answer": "Roofs of houses of different colors"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "ruler-like layout",
+        "right_answer": "chaotically built buildings"
+      }
+    ]
+  },
+  "bb_m_66.png": {
+    "correct_examples": [
+      {
+        "left_answer": "chaotic form of vehicle parking",
+        "right_answer": "all vehicles are lined up"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "different means of transport",
+        "right_answer": "means of transport are grouped "
+      }
+    ]
+  },
+  "bb_m_67.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Straight roads",
+        "right_answer": "Curved roads"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "circle in the city",
+        "right_answer": "circle in the field"
+      }
+    ]
+  },
+  "bb_m_68.png": {
+    "correct_examples": [
+      {
+        "left_answer": "many lanes",
+        "right_answer": "2 lanes"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Airplanes on the runway",
+        "right_answer": "Residential houses"
+      }
+    ]
+  },
+  "bb_m_69.png": {
+    "correct_examples": [
+      {
+        "left_answer": "three colors",
+        "right_answer": "two colors"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "animals of the same color",
+        "right_answer": "animals of different colors"
+      }
+    ]
+  },
+  "bb_m_70.png": {
+    "correct_examples": [
+      {
+        "left_answer": "presence of four circular objects",
+        "right_answer": "objects intersect each other with straight lines  "
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Animals in the distance",
+        "right_answer": "Animals nearby"
+      }
+    ]
+  },
+  "bb_m_71.png": {
+    "correct_examples": [
+      {
+        "left_answer": "intersections",
+        "right_answer": "circles"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Symmetrically",
+        "right_answer": "Asymmetrically"
+      }
+    ]
+  },
+  "bb_m_73.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Railway",
+        "right_answer": "Road"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Industrial district of the city",
+        "right_answer": "City bridges "
+      }
+    ]
+  },
+  "bb_m_74.png": {
+    "correct_examples": [
+      {
+        "left_answer": "The overpass goes from the bottom border to the top border of the image",
+        "right_answer": "The overpass goes from the left border to the right border of the image"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "More than one vehicle",
+        "right_answer": "No more than one vehicle"
+      }
+    ]
+  },
+  "bb_m_75.png": {
+    "correct_examples": [
+      {
+        "left_answer": "The river crosses the frame relatively straight",
+        "right_answer": "The river makes at least 1 turn greater than 30 degrees"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Road intersections",
+        "right_answer": "Roundabout intersections"
+      }
+    ]
+  },
+  "bb_m_76.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Grid-like, square-nested structure ",
+        "right_answer": "Structure with radial distribution"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Area with reservoirs ",
+        "right_answer": "Area without reservoirs"
+      }
+    ]
+  },
+  "bb_m_79.png": {
+    "correct_examples": [
+      {
+        "left_answer": "island",
+        "right_answer": "peninsula"
+      },
+      {
+        "left_answer": "coastline is closed within frame",
+        "right_answer": "coasstline crosses the frame"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Smooth coastline",
+        "right_answer": "Broken coastline"
+      }
+    ]
+  },
+  "bb_m_80.png": {
+    "correct_examples": [
+      {
+        "left_answer": "natural irregularities ",
+        "right_answer": "artificial irregularities"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "uniform landscape, especially in color",
+        "right_answer": "diverse landscape in color"
+      }
+    ]
+  },
+  "bb_m_83.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Satellite image",
+        "right_answer": "Schematic map"
+      },
+      {
+        "left_answer": "a real photo",
+        "right_answer": "not a real photo"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "mountains",
+        "right_answer": "quarry"
+      }
+    ]
+  },
+  "bb_m_87.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Airports",
+        "right_answer": "Railway stations"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "there are areas with rounded corners",
+        "right_answer": "there are areas with sharp corners"
+      }
+    ]
+  },
+  "bb_m_89.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Symmetrical interchange system",
+        "right_answer": "Asymmetrical interchange system"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "4 \"circles\"",
+        "right_answer": "2 \"circles\""
+      }
+    ]
+  },
+  "bb_m_91.png": {
+    "correct_examples": [
+      {
+        "left_answer": "roads intersect the circle",
+        "right_answer": "roads do not intersect the circle"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "highway",
+        "right_answer": "roundabout, circle"
+      }
+    ]
+  },
+  "bb_m_92.png": {
+    "correct_examples": [
+      {
+        "left_answer": "The horizontal road passes under the vertical one.",
+        "right_answer": "The vertical road passes under the horizontal one"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "circular interchanges",
+        "right_answer": "bridges"
+      }
+    ]
+  },
+  "bb_m_94.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Without ships",
+        "right_answer": "With ships"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "base near water",
+        "right_answer": "parking on water for yachts"
+      }
+    ]
+  },
+  "bb_m_95.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Cars on the left side of the buildings",
+        "right_answer": "Cars on the right side of the buildings"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "there are clouds",
+        "right_answer": "there are no clouds"
+      }
+    ]
+  },
+  "bb_m_96.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Trees in the upper part ",
+        "right_answer": "trees in the lower part "
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Completely forest territories",
+        "right_answer": "There are residential territories"
+      }
+    ]
+  },
+  "bb_m_97.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Bright red objects are located predominantly in the left part/half of the image.",
+        "right_answer": "Bright red objects are located predominantly in the right part/half of the image."
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "multi-lane road",
+        "right_answer": "two-lane road"
+      }
+    ]
+  },
+  "bb_m_98.png": {
+    "correct_examples": [
+      {
+        "left_answer": "The shore stretches from the upper left corner to the lower right",
+        "right_answer": "The shore stretches from the lower left corner to the upper right"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Ordinary road intersections",
+        "right_answer": "Roundabout intersections "
+      }
+    ]
+  },
+  "bb_m_99.png": {
+    "correct_examples": [
+      {
+        "left_answer": "there are no objects inside the circle",
+        "right_answer": "there are objects inside the circle"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Road at nadir  ",
+        "right_answer": "Road at an angle"
+      }
+    ]
+  },
+  "bb_r_38.png": {
+    "correct_examples": [
+      {
+        "left_answer": "The reservoir is enclosed",
+        "right_answer": "The reservoir is not bounded by the image borders on at least one side "
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Dark water",
+        "right_answer": "Light water"
+      }
+    ]
+  },
+  "bb_r_48.png": {
+    "correct_examples": [
+      {
+        "left_answer": "multi-story buildings over 10 floors",
+        "right_answer": "low-rise houses"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "rounded boundaries",
+        "right_answer": "straight boundaries\n"
+      }
+    ]
+  },
+  "bb_r_99.png": {
+    "correct_examples": [
+      {
+        "left_answer": "the center of the circle is empty ",
+        "right_answer": "non-empty center of the circle"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Roundabout traffic",
+        "right_answer": "Roundabout traffic"
+      }
+    ]
+  },
+  "bb_s_05.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Several people",
+        "right_answer": "one person"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "All animals in the image are of the same color",
+        "right_answer": "Each image contains animals of at least 2 colors"
+      }
+    ]
+  },
+  "bb_s_08.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Cars on the left",
+        "right_answer": "Cars on the right"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Organized herd",
+        "right_answer": "Chaotic herd"
+      }
+    ]
+  },
+  "bb_s_11.png": {
+    "correct_examples": [
+      {
+        "left_answer": "There are several cars in the image",
+        "right_answer": "There is only one car in the image"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "there is parking for cars",
+        "right_answer": "there is no parking for cars"
+      }
+    ]
+  },
+  "bb_s_12.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Cars are visually positioned vertically",
+        "right_answer": "Cars are visually positioned horizontally"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "land areas with reservoirs ",
+        "right_answer": "land areas without reservoirs "
+      }
+    ]
+  },
+  "bb_s_14.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Transport in the left part of the image",
+        "right_answer": "Transport in the right part of the image"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "boat",
+        "right_answer": "boat"
+      }
+    ]
+  },
+  "bb_s_15.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Transport in the upper part of the image",
+        "right_answer": "Transport in the lower part of the image"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "ship",
+        "right_answer": "ship"
+      }
+    ]
+  },
+  "bb_s_17.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Many ships",
+        "right_answer": "Few ships"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Pier",
+        "right_answer": "Boat afloat"
+      }
+    ]
+  },
+  "bb_s_18.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Ships are vertically oriented",
+        "right_answer": "Ships are horizontally oriented"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Airports",
+        "right_answer": "Railway stations"
+      }
+    ]
+  },
+  "bb_s_19.png": {
+    "correct_examples": [
+      {
+        "left_answer": "presence of a tree in the photograph",
+        "right_answer": "absence of trees"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "airplanes",
+        "right_answer": "watercraft"
+      }
+    ]
+  },
+  "bb_s_20.png": {
+    "correct_examples": [
+      {
+        "left_answer": "trees in the upper part of the image",
+        "right_answer": "trees in the lower part of the image"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Mountains without snow",
+        "right_answer": "Snow-covered mountains"
+      }
+    ]
+  },
+  "bb_s_22.png": {
+    "correct_examples": [
+      {
+        "left_answer": "trees",
+        "right_answer": "bushes"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "group of buildings  ",
+        "right_answer": "single buildings"
+      }
+    ]
+  },
+  "bb_s_23.png": {
+    "correct_examples": [
+      {
+        "left_answer": "at least two отдельно standing trees",
+        "right_answer": "one отдельно standing tree"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "cloverleaf interchanges ",
+        "right_answer": "merge-type interchanges"
+      }
+    ]
+  },
+  "bb_s_25.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Presence of at least one lake",
+        "right_answer": "Absence of reservoirs"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Green mountains",
+        "right_answer": "White mountains"
+      }
+    ]
+  },
+  "bb_s_28.png": {
+    "correct_examples": [
+      {
+        "left_answer": "an irregularly shaped reservoir occupies most of the photo",
+        "right_answer": "an irregularly shaped reservoir occupies a small part of the photo"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Wide road",
+        "right_answer": "Narrow road"
+      }
+    ]
+  },
+  "bb_s_29.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Several reservoirs",
+        "right_answer": "One reservoir"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "airplanes",
+        "right_answer": "private houses"
+      }
+    ]
+  },
+  "bb_s_30.png": {
+    "correct_examples": [
+      {
+        "left_answer": "horizontal shot",
+        "right_answer": "vertical shot"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Natural reservoirs",
+        "right_answer": "Artificial reservoirs"
+      }
+    ]
+  },
+  "bb_s_34.png": {
+    "correct_examples": [
+      {
+        "left_answer": "land transport",
+        "right_answer": "water transport"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "intersection",
+        "right_answer": "circle, roundabout"
+      }
+    ]
+  },
+  "bb_s_35.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Absence of trees",
+        "right_answer": "Separately standing tree"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "similar rectangular objects",
+        "right_answer": "absence of groups of objects"
+      }
+    ]
+  },
+  "bb_s_38.png": {
+    "correct_examples": [
+      {
+        "left_answer": "ponds and lakes fully in frame",
+        "right_answer": "open borders water bodies"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "trees",
+        "right_answer": "water"
+      }
+    ]
+  },
+  "bb_s_39.png": {
+    "correct_examples": [
+      {
+        "left_answer": "reservoirs with boats",
+        "right_answer": "reservoirs without boats"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Urban reservoirs",
+        "right_answer": "Suburban reservoirs"
+      }
+    ]
+  },
+  "bb_s_41.png": {
+    "correct_examples": [
+      {
+        "left_answer": "buildings",
+        "right_answer": "presence of trees"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "House",
+        "right_answer": "Garage"
+      }
+    ]
+  },
+  "bb_s_42.png": {
+    "correct_examples": [
+      {
+        "left_answer": "photographs of runway sections",
+        "right_answer": "no runways"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Parallelism ",
+        "right_answer": "Perpendicularity "
+      }
+    ]
+  },
+  "bb_s_43.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Airplanes",
+        "right_answer": "Water transport"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Satellite map images",
+        "right_answer": "Schematic map images"
+      }
+    ]
+  },
+  "bb_s_44.png": {
+    "correct_examples": [
+      {
+        "left_answer": "2 objects",
+        "right_answer": "3 objects"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "lower quality",
+        "right_answer": "higher quality"
+      }
+    ]
+  },
+  "bb_s_49.png": {
+    "correct_examples": [
+      {
+        "left_answer": "buildings",
+        "right_answer": "absence of buildings"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Sports fields",
+        "right_answer": "\"Agricultural\" fields"
+      }
+    ]
+  },
+  "bb_s_53.png": {
+    "correct_examples": [
+      {
+        "left_answer": "private sector",
+        "right_answer": "lonely houses"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "America",
+        "right_answer": "Rich district"
+      }
+    ]
+  },
+  "bb_s_55.png": {
+    "correct_examples": [
+      {
+        "left_answer": "airplanes",
+        "right_answer": "I don't know"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Road for aircraft",
+        "right_answer": "Road for ground vehicles"
+      }
+    ]
+  },
+  "bb_s_57.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Airplane in the upper part of the image",
+        "right_answer": "Airplane in the lower part of the image"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "airplane",
+        "right_answer": "airplane"
+      }
+    ]
+  },
+  "bb_s_58.png": {
+    "correct_examples": [
+      {
+        "left_answer": "several airplanes in the photo",
+        "right_answer": "one airplane in the photo"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "Civil airplanes",
+        "right_answer": "Civil airport"
+      }
+    ]
+  },
+  "bb_s_59.png": {
+    "correct_examples": [
+      {
+        "left_answer": "Airplanes occupy a large area of the image",
+        "right_answer": "Airplanes occupy a small area of the image"
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "left_answer": "curved shore",
+        "right_answer": "straight shore"
+      }
+    ]
+  }
+}

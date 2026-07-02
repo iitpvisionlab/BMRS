@@ -1,0 +1,614 @@
+{
+  "tasks": [
+    {
+      "name": "bb_m_01.png",
+      "type": "shape",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_02.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_03.png",
+      "type": "shape",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_04.png",
+      "type": "presence",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_08.png",
+      "type": "spatial",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_09.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_10.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_11.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_12.png",
+      "type": "presence",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_13.png",
+      "type": "presence",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_14.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_15.png",
+      "type": "presence",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_18.png",
+      "type": "semantic",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_19.png",
+      "type": "presence",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_20.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_22.png",
+      "type": "spatial",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_23.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_24.png",
+      "type": "spatial",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_27.png",
+      "type": "semantic",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_28.png",
+      "type": "semantic",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_29.png",
+      "type": "number",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_30.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_32.png",
+      "type": "spatial",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_33.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_36.png",
+      "type": "semantic",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_37.png",
+      "type": "presence",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_38.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_41.png",
+      "type": "spatial",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_45.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_46.png",
+      "type": "spatial",
+      "complexity": 3
+    },
+    {
+      "name": "bb_r_48.png",
+      "type": "size",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_49.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_51.png",
+      "type": "semantic",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_53.png",
+      "type": "semantic",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_54.png",
+      "type": "shape",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_56.png",
+      "type": "shape",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_57.png",
+      "type": "shape",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_58.png",
+      "type": "shape",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_59.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_60.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_61.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_62.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_63.png",
+      "type": "spatial",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_65.png",
+      "type": "same",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_66.png",
+      "type": "same",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_67.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_68.png",
+      "type": "number",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_69.png",
+      "type": "number",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_70.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_71.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_73.png",
+      "type": "spatial",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_74.png",
+      "type": "spatial",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_75.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_76.png",
+      "type": "shape",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_79.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_80.png",
+      "type": "semantic",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_83.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_87.png",
+      "type": "semantic",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_89.png",
+      "type": "shape",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_91.png",
+      "type": "shape",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_92.png",
+      "type": "spatial",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_94.png",
+      "type": "presence",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_95.png",
+      "type": "spatial",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_96.png",
+      "type": "spatial",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_97.png",
+      "type": "spatial",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_98.png",
+      "type": "spatial",
+      "complexity": 2
+    },
+    {
+      "name": "bb_r_99.png",
+      "type": "presence",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_100.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_101.png",
+      "type": "spatial",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_102.png",
+      "type": "spatial",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_103.png",
+      "type": "spatial",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_104.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_105.png",
+      "type": "shape",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_106.png",
+      "type": "shape",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_107.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_108.png",
+      "type": "shape",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_109.png",
+      "type": "semantic",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_110.png",
+      "type": "semantic",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_111.png",
+      "type": "semantic",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_112.png",
+      "type": "spatial",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_113.png",
+      "type": "shape",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_114.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_115.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_116.png",
+      "type": "size",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_117.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_118.png",
+      "type": "number",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_120.png",
+      "type": "same",
+      "complexity": 3
+    },
+    {
+      "name": "bb_m_121.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_122.png",
+      "type": "semantic",
+      "complexity": 2
+    },
+    {
+      "name": "bb_m_124.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_125.png",
+      "type": "same",
+      "complexity": 2
+    },
+    {
+      "name": "bb_s_05.png",
+      "type": "number",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_08.png",
+      "type": "spatial",
+      "complexity": 2
+    },
+    {
+      "name": "bb_s_11.png",
+      "type": "number",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_12.png",
+      "type": "spatial",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_14.png",
+      "type": "spatial",
+      "complexity": 2
+    },
+    {
+      "name": "bb_s_15.png",
+      "type": "spatial",
+      "complexity": 2
+    },
+    {
+      "name": "bb_s_17.png",
+      "type": "number",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_18.png",
+      "type": "spatial",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_19.png",
+      "type": "presence",
+      "complexity": 2
+    },
+    {
+      "name": "bb_s_20.png",
+      "type": "spatial",
+      "complexity": 3
+    },
+    {
+      "name": "bb_s_22.png",
+      "type": "size",
+      "complexity": 2
+    },
+    {
+      "name": "bb_s_23.png",
+      "type": "number",
+      "complexity": 2
+    },
+    {
+      "name": "bb_s_25.png",
+      "type": "presence",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_28.png",
+      "type": "size",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_29.png",
+      "type": "number",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_30.png",
+      "type": "spatial",
+      "complexity": 2
+    },
+    {
+      "name": "bb_s_34.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_35.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_r_38.png",
+      "type": "semantic",
+      "complexity": 2
+    },
+    {
+      "name": "bb_s_39.png",
+      "type": "presence",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_41.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_42.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_43.png",
+      "type": "semantic",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_44.png",
+      "type": "number",
+      "complexity": 2
+    },
+    {
+      "name": "bb_s_49.png",
+      "type": "presence",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_53.png",
+      "type": "number",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_55.png",
+      "type": "presence",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_57.png",
+      "type": "spatial",
+      "complexity": 2
+    },
+    {
+      "name": "bb_s_58.png",
+      "type": "number",
+      "complexity": 1
+    },
+    {
+      "name": "bb_s_59.png",
+      "type": "size",
+      "complexity": 1
+    },
+    {
+      "name": "bb_m_126.png",
+      "type": "semantic",
+      "complexity": 1
+    }
+  ]
+}
