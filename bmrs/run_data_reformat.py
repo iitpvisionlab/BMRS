@@ -1,11 +1,17 @@
+import argparse
 from pathlib import Path
-from bmrs.evaluation.results_set import ResultSet
+from bmrs.reformat.results_set import ResultSet
 
-vlm_results = Path("results/test_name/vlm_results.json")
-answers_to_evaluate = Path("results/test_name/answers_to_evaluate.json")
-prompts_path = Path("bmrs/evaluation/prompts.json") # VLM prompts 
 if __name__ == "__main__":
-    
-    results = ResultSet(results_path=vlm_results, evaluation_path=answers_to_evaluate, prompts_path=prompts_path)
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("--vlm_answers_path", type=str, default="results/test_name/vlm_results.json")
+    parser.add_argument("--reformat_path", type=str, default="results/test_name/answers_to_evaluate.json")
+
+    args = parser.parse_args()
+    vlm_answers_path = Path(args.vlm_answers_path)
+    reformat_path = Path(args.reformat_path)
+
+    results = ResultSet(results_path=vlm_answers_path, evaluation_path=reformat_path, prompts_path=Path("bmrs/reformat/prompts.json"))
     results.save_evaluation()
 

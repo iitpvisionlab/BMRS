@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 from typing import Dict, List, Optional
-from bmrs.evaluation.results_reader import ResultsDataManager
+from bmrs.reformat.results_reader import ResultsDataManager
 
 
 class ResultSet:
