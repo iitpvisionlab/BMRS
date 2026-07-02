@@ -8,12 +8,13 @@ export PYTHONPATH="$PROJECT_ROOT:$LLM_JUDGE_ROOT:$PYTHONPATH"
 
 ## Run configuration
 CONFIG_PATH="$PROJECT_ROOT/configs/test_config.json"
-VLM_MODEL_NAME="model name to save results, does not affect anything else"
 JUDGE_MODEL_NAME="Qwen/Qwen3.5-2B"
 JUDGE_PROMPT_NAME="judge_system_prompt_en"
 RESULTS_SUBDIR="test_specific"
 
+
 ## Paths configuration
+VLM_MODEL_NAME=$(python -c "import json; print(json.load(open('$CONFIG_PATH'))['model'])")
 VLM_RESULTS="$PROJECT_ROOT/results/$VLM_MODEL_NAME/vlm_results.json"
 ANSWERS_REFORMAT="$PROJECT_ROOT/results/$VLM_MODEL_NAME/answers_reformat.json"
 SYSTEM_PROMPT="$LLM_JUDGE_ROOT/prompts_data/judge_system_prompt_en.txt"
